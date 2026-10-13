@@ -20,33 +20,28 @@ public class ArrayUtil {
         System.out.println();
         System.out.println("Middle elements: " + numbers.length);
         System.out.println();
-        int x = 0;
+        int cout = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 == 0) {
-                x++;
+                cout++;
             }
         }
-        System.out.println("Even numbers count: " + x);
+        System.out.println("Even numbers count: " + cout);
         System.out.println();
-        int y = 0;
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] % 2 != 0) {
-                y++;
+                cout++;
             }
         }
-        System.out.println("Odd numbers count: " + y);
+        System.out.println("Odd numbers count: " + cout);
         System.out.println();
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {
-           sum += numbers[i];
+            sum += numbers[i];
         }
         System.out.println("Sum " + "= " + sum);
         System.out.println();
-        int z = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            z += numbers[i];
-        }
-            double average = (double) z / numbers.length;
+        double average = (double) sum / numbers.length;
         System.out.println("Average: " + average);
     }
 }
