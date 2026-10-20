@@ -4,7 +4,7 @@ public class ArrayHomework {
     public static void main(String[] args) {
         int count = 0;
         int[] numbers = {6, 3, 8, 6, 1, 9, 6, 4, 2, 6};
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] == 6) {
                 count++;
             }
@@ -12,7 +12,7 @@ public class ArrayHomework {
         System.out.println("Count of 6: " + count);
         System.out.println();
         int[] nums = {1, 5, 8, 3, 9, 2, 7, 4, 6, 10};
-        {
+
             for (int num : nums) {
                 System.out.print(num + " ");
             }
@@ -25,7 +25,7 @@ public class ArrayHomework {
             for (int num : nums) {
                 System.out.print(num + " ");
             }
-        }
+
         System.out.println();
         int[] numbs = {3, 6, 8, 3, 9, 6, 2, 3, 5, 6};
         int repeatedNumbers = 0;
